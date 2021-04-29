@@ -1,5 +1,5 @@
 let svg = null;
-let square = document.querySelector('.center svg');
+let square = null;
 isDraggable = false;
 blockStatus = {
     yellow: false,
@@ -10,12 +10,9 @@ blockStatus = {
 
 document.addEventListener('mousemove', drag);
 
-function zxc() {
-    console.log('zxc');
-}
-
 function makeDraggable(event) {
-    let svg = event.target.closest('svg');
+    svg = event.target.closest('svg');
+    square = document.querySelector('.center svg');
     svg.addEventListener('mousedown', startDrag);
     svg.addEventListener('mouseup', endDrag);
 }
