@@ -1,12 +1,12 @@
 let svg = null;
 let square = null;
-isDraggable = false;
+let isDraggable = false;
 blockStatus = {
     yellow: false,
     blue: false,
     green: false,
     purple: false
-}
+};
 
 document.addEventListener('mousemove', drag);
 
@@ -40,7 +40,7 @@ function endDrag(event) {
     event.preventDefault();
 
     let isTopCircle = event.target.closest('svg').classList.contains('top');
-    let isBottomCircle = event.target.closest('svg').classList.contains('bottom')
+    let isBottomCircle = event.target.closest('svg').classList.contains('bottom');
 
     let topSvg = svg.getBoundingClientRect().top;
     let rightSvg = svg.getBoundingClientRect().left + svg.getBoundingClientRect().width;
