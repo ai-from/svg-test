@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Test</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        
+        <div class="top">
+            <div>
+                <svg onload="makeDraggable(event)" class="circle top" id="circle-1" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20.5" stroke="white"/>
+                    <path d="M41 21.0003C41 32.046 32.0457 41.0003 21 41.0003C9.9543 41.0003 1 32.046 1 21.0003C7.5 21.0002 9.9543 21.0002 21 21.0002C32.0457 21.0002 36 21.0002 41 21.0003Z" fill="#49C2F1"/>
+                    <path d="M1 21C1 9.95428 9.9543 0.999975 21 0.999975C32.0457 0.999975 41 9.95428 41 21C34.5 21 32.0457 21 21 21C9.9543 21 6 21 1 21Z" fill="#E6E356"/>
+                </svg>
+            </div>
+            <div>
+                <svg onload="makeDraggable(event)" class="circle top" id="circle-2" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20.5" stroke="white"/>
+                    <path d="M41 21.0003C41 32.046 32.0457 41.0003 21 41.0003C9.9543 41.0003 1 32.046 1 21.0003C7.5 21.0002 9.9543 21.0002 21 21.0002C32.0457 21.0002 36 21.0002 41 21.0003Z" fill="#49C2F1"/>
+                    <path d="M1 21C1 9.95428 9.9543 0.999975 21 0.999975C32.0457 0.999975 41 9.95428 41 21C34.5 21 32.0457 21 21 21C9.9543 21 6 21 1 21Z" fill="#E6E356"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="center">
+            <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="yellow" y="0.000244141" width="150" height="150" fill="#E6E356"/>
+                <rect class="blue" x="150" y="0.000244141" width="150" height="150" fill="#49C2F1"/>
+                <rect class="green" y="150" width="150" height="150" fill="#39AA36"/>
+                <rect class="purple" x="150" y="150" width="150" height="150" fill="#9F4292"/>
+            </svg>
+        </div>
+
+        <div class="bottom">
+            <div>
+                <svg onload="makeDraggable(event)" class="circle bottom" id="circle-3" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20.5" stroke="white"/>
+                    <path d="M41 21.0003C41 32.046 32.0457 41.0003 21 41.0003C9.9543 41.0003 1 32.046 1 21.0003C7.5 21.0002 9.9543 21.0002 21 21.0002C32.0457 21.0002 36 21.0002 41 21.0003Z" fill="#9F4292"/>
+                    <path d="M1 21C1 9.95428 9.9543 0.999975 21 0.999975C32.0457 0.999975 41 9.95428 41 21C34.5 21 32.0457 21 21 21C9.9543 21 6 21 1 21Z" fill="#39AA36"/>
+                </svg>
+            </div> 
+            <div>
+                <svg onload="makeDraggable(event)" class="circle bottom" id="circle-4" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20.5" stroke="white"/>
+                    <path d="M41 21.0003C41 32.046 32.0457 41.0003 21 41.0003C9.9543 41.0003 1 32.046 1 21.0003C7.5 21.0002 9.9543 21.0002 21 21.0002C32.0457 21.0002 36 21.0002 41 21.0003Z" fill="#9F4292"/>
+                    <path d="M1 21C1 9.95428 9.9543 0.999975 21 0.999975C32.0457 0.999975 41 9.95428 41 21C34.5 21 32.0457 21 21 21C9.9543 21 6 21 1 21Z" fill="#39AA36"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <script defer src="js/main.js"></script>
+</body>
+</html>

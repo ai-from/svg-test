@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: min-content;
+    margin: 20px auto;
+}
+.wrapper .top, .wrapper .bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 42px);
+    justify-content: center;
+    grid-gap: 20px;
+    min-height: 46px;
+}
+.wrapper .top .circle, .wrapper .bottom .circle {
+    cursor: move;
+    position: relative;
+}
+
+.wrapper .center {
+    margin: 20px 0;
+}
